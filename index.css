@@ -1,0 +1,280 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1024px;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+.logo {
+  font-size: 3em;
+  font-weight: 800;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.nav {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+a:hover {
+  color: hsl(5, 85%, 63%);
+}
+.container2 {
+  display: flex;
+  gap: 30px;
+}
+.banner-side {
+  display: flex;
+  flex: 2.5;
+  height: auto;
+  flex-direction: column;
+}
+.banner1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner2 {
+  display: none;
+  object-fit: cover;
+}
+.Banner-Text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+  margin-top: 20px;
+}
+.Banner-Big-Text {
+  font-family: "Inter", sans-serif;
+  font-size: 3em;
+  width: 6em;
+  font-weight: 800;
+}
+.text-btn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+.btn {
+  height: 50px;
+  width: 170px;
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  letter-spacing: 0.4em;
+  font-size: 0.7em;
+  border: none;
+}
+.btn:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+.new-side {
+  background-color: hsl(240, 100%, 5%);
+  flex: 1;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.main-heading {
+  color: hsl(35, 77%, 62%);
+  font-size: 2em;
+  margin-top: 10px;
+}
+.heading {
+  color: white;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+.heading:hover {
+  color: hsl(35, 77%, 62%);
+}
+.paragraph1 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  margin-top: 10px;
+  font-weight: 200;
+}
+.hr1 {
+  margin-top: 20px;
+  border-bottom: none;
+}
+.card-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-menu {
+  display: flex;
+
+  padding: 3px;
+}
+.card-image {
+  width: 100px;
+  object-fit: cover;
+}
+.card-text-area {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+}
+.Card-heading {
+  color: hsl(233, 8%, 79%);
+  font-size: 2em;
+}
+.card-sub-Heading {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+.card-sub-Heading:hover {
+  color: hsl(5, 85%, 63%);
+}
+.card-paragraph {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+/* sidenav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 15px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.nav-link {
+  margin-top: 120px;
+  font-weight: 600;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-right 0.5s;
+  padding: 20px;
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 15px;
+  }
+  .navbar {
+    height: 80px;
+  }
+  .nav-items {
+    display: none;
+  }
+  .nav {
+    display: block;
+    cursor: pointer;
+  }
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner1 {
+    display: none;
+  }
+  .banner2 {
+    display: block;
+    width: 100%;
+  }
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Banner-Text {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .Banner-Big-Text {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 2.6em;
+  }
+  .text-btn {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .new-side {
+    width: 89%;
+  }
+
+  /* navbar */
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

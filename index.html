@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+ 
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;800&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="./index.css" />
+  
+  <!-- font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+      <div class="navbar">
+        <h1 class="logo">W.</h1>
+        <nav>
+          <ul class="nav-items">
+            <li>
+              <a href="#"> Home </a>
+            </li>
+            <li>
+              <a href="#"> New </a>
+            </li>
+            <li>
+              <a href="#"> Popular </a>
+            </li>
+            <li><a href="#"> Trending </a></li>
+            <li>
+              <a href="#"> Categories </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- SidenNav Button -->
+        <div class="nav">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav-link">
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+            </div>
+  
+          </div>
+          <i  class="fa-solid fa-bars fa-2xl" onclick="openNav()"></i>
+          </div>
+      </div>
+
+      <div class="container2">
+        <div class="banner-side">
+          <img class="banner1" src="./assets/images/image-web-3-desktop.jpg" alt="banner" />
+          <img class="banner2" src="./assets/images//image-web-3-mobile.jpg" alt="banner" />
+          <div class="Banner-Text">
+            <span class="Banner-Big-Text">
+              The Bright Future of Web 3.0?
+            </span>
+            <div class="text-btn">
+              <span>We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?</span>
+              <button class="btn">READ MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="new-side">
+          <h3 class="main-heading">New</h3>
+          <h5 class="heading">Hydrogen VS Electric Cars</h5>
+          <p class="paragraph1">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+          <hr class="hr1" />
+          <h4 class="heading">The Downsides of AI Artistry</h4>
+          <p class="paragraph1">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+          <hr class="hr1" />
+          <h5 class="heading">Is VC Funding Drying Up?</h5>
+          <p class="paragraph1">
+            Private funding by VC firms is down 50% YOY. We take a look at
+            what that means.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <!-- card1 -->
+        <div class="card-menu">
+          <img class="card-image" src="./assets/images/image-retro-pcs.jpg" alt="retro-pc" />
+          <div class="card-text-area">
+            <h3 class="Card-heading">01</h3>
+            <h4 class="card-sub-Heading">Reviving Retro PCs</h4>
+            <p class="card-paragraph">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="card-menu">
+          <img class="card-image" src="./assets/images/image-top-laptops.jpg" alt="retro-pc" />
+          <div class="card-text-area">
+            <h3 class="Card-heading">02</h3>
+            <h4 class="card-sub-Heading">Top 10 Laptops of 2022</h4>
+            <p class="card-paragraph">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+
+        <!-- card3 -->
+        <div class="card-menu">
+          <img class="card-image" src="./assets/images/image-gaming-growth.jpg" alt="retro-pc" />
+          <div class="card-text-area">
+            <h3 class="Card-heading">03</h3>
+            <h4 class="card-sub-Heading">The Growth of Gaming</h4>
+            <p class="card-paragraph">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>
